@@ -13,7 +13,7 @@ const colors = require('colors');
 // const session = require('express-session');  //  // to create a session cookie for session persistance
 // ~ ~
 
-// require('./back-end/database');  // database.js holds Mongoose connection to MongoDB
+require('./back-end/database');  // database.js holds Mongoose connection to MongoDB
 
 const port = process.env.PORT || 3000;  // dynamic port
 
