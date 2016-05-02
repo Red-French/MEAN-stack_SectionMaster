@@ -38,7 +38,7 @@ app.get('/hello', (req, res) => {
 		}, 2000);
 });
 
-// require ('./back-end/api/api.js')(app); // location of api - pass in app
+require ('./back-end/api.js')(app); // location of api - pass in app
 
   app.listen(port, () => {
     console.log(colors.green(`Section Master server running on port: ${port}`));
