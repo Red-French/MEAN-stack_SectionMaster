@@ -1,0 +1,44 @@
+{
+  "name": "mean-stack_sectionmaster",
+  "version": "1.0.0",
+  "description": "SIDE PROJECT. An app for MNC for tracking songs and each singer's pass/fail status.",
+  "main": "server.js",
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bower": "bower",
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "engines": {
+    "node": "6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Red-French/MEAN-stack_SectionMaster.git"
+  },
+  "author": "Red French <red@redfrench.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Red-French/MEAN-stack_SectionMaster/issues"
+  },
+  "homepage": "https://github.com/Red-French/MEAN-stack_SectionMaster#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "bower": "^1.7.9",
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "mongoose": "^4.4.14",
+    "node-sass-middleware": "^0.9.8"
+  },
+  "devDependencies": {
+    "colors": "^1.1.2",
+    "grunt": "^1.0.1",
+    "grunt-contrib-jade": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "matchdep": "^1.0.1",
+    "nodemon": "^1.9.2"
+  }
+}
