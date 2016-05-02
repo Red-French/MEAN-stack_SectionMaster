@@ -4,7 +4,7 @@
 module.exports = (app) => {
 
 var PassFailData = require('./models/passfail.js');  // Schema
-// var todoList = require('../../mock/todos.json');  // importing mock data
+var statusList = require('../mock/passfail.json');  // importing mock data
 
 app.get('/', (req, res) => {
   res.render('index');
@@ -23,7 +23,8 @@ app.post('/api/status', (req, res) => {  // URL of request
 
 // READ
 app.get('/api/status', (req, res) => {
-  res.send('These are the pass/fails!');
+  // res.send('These are the pass/fails!');
+  res.json({statusList: statusList});
   // res.send({todos: []});
  //  PassFailData.find({}, (err, passfail) => {  // The model's 'find' method.
  //                // The first parameter of the find method is going to be a JSON object where you pass conditions of the documents you want to find.
