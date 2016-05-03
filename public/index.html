@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Section Master</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body ng-app="MNCApp" id="background">  <!-- tells Angular what part of the view is controlled by the app - 'MusicApp' is the name given to the 'module' function in app.js-->
+	<div class="navbar transparent navbar-inverse navbar-fixed-top">
+	   <nav class="navbar-inner">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Section Master</a>
+	    </div>
+	    <div>
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="/#/songs/list">View Music</a></li>
+	        <li><a href="/#/songs/form">Add Music</a></li>
+	        <li><input ng-model="query" id="searchBox" type="text" class="form-control" placeholder="Search"></li>
+	      </ul>
+	    </div>
+	    <div id="userInstruction" class="text">Click Title for Details</div>
+	  </div>
+	</nav>
+	</div>
+	<div id="options" ng-controller="SingerCtrl">
+		<span>Choose Singer:</span>
+    <select ng-model="artistModel" name="artist">
+    	<option></option>
+    	<option ng-repeat="thing in songs">{{thing.song}}</option>
+    </select>
+    <span>Choose Song:</span>
+		<select ng-model="albumModel" name="album">
+	    	<option></option>
+	    	<option ng-repeat="thing in songs">{{thing.status}}</option>
+		</select>
+
+	<div ng-view id="results"></div>
+  <div>{{passfail.amount}}</div>
+
+  </div>
+
+    <!-- Modal for scan added -->
+  <div class="modal fade" id="addInfoModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">New Song</h4>
+        </div>
+        <div class="modal-body">
+        Information successfully added.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src='./vendor/angular/angular.min.js'></script>
+  <script src='./vendor/angular-route/angular-route.min.js'></script>
+  <script src='./vendor/angular-ui-router/release/angular-ui-router.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ui-router-extras/0.1.0/modular/ct-ui-router-extras.core.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/ui-router-extras/0.1.0/modular/ct-ui-router-extras.sticky.min.js'></script>
+  <script src='./vendor/jquery/dist/jquery.min.js'></script>
+  <script src='./controllers/config.js'></script>
+  <script src='./controllers/SingerCtrl.js'></script>
+  <script src='./controllers/formCtrl.js'></script>
+  <script src='./services/data.js'></script>
+  <script src='//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js'></script>
+
+</body>
+</html>
