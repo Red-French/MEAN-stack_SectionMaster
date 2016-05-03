@@ -23,18 +23,12 @@ app.post('/api/status', (req, res) => {  // URL of request
 
 // READ
 app.get('/api/status', (req, res) => {
-  // res.send('These are the pass/fails!');
-  res.json({statusList: statusList});
-  // res.send({todos: []});
- //  PassFailData.find({}, (err, passfail) => {  // The model's 'find' method.
- //                // The first parameter of the find method is going to be a JSON object where you pass conditions of the documents you want to find.
- //                  // * An empty object here would return everything
- //                // The second paramenter of the find method is going to be a callback function which takes 2 arguments; a potenial error and the data.
- //    if (err) {
- //      return res.status(500).json({message: err.message});
- //    }
- //   res.json({passfail: passfail});
- // }).sort({"song": 1});
+  PassFailData.find({}, (err, passfail) => {  // The model's 'find' method.
+    if (err) {
+      return res.status(500).json({message: err.message});
+    }
+    res.json({statusList: statusList});
+  }).sort({"song": -1});  // sort in descending order
 });
 
 // // UPDATE
