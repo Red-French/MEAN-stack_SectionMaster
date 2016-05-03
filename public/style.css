@@ -1,0 +1,93 @@
+#background {
+  /*background-image: url("https://i.ytimg.com/vi/S-Sd4JJDgXs/maxresdefault.jpg");*/
+  background-image: url("./images/MNC.jpg");
+  background-size: cover;
+  background-attachment :fixed;
+}
+
+/*#background:before {
+  content: "";
+  background: url("./images/MNC.jpg");
+  opacity: 0.07;
+  top: 1em;
+  left: 4em;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}*/
+
+img {
+  opacity: 0.4;
+}
+
+a {
+	color: #E5E4E2;
+	text-decoration: none;
+}
+p {
+	color: #E5E4E2;
+}
+button {
+	color: black;
+}
+.navbar-brand {
+	font-size: 3em;
+}
+#searchBox {
+	margin-top: 7.5px;
+}
+#songDetails {
+	color: #E5E4E2;
+}
+#songFilter {
+	color: #E5E4E2;
+}
+.navbar.transparent.navbar-inverse .navbar-inner {
+   background: rgba(0,0,0,0.4);
+}
+a:hover {
+	color: white;
+}
+.text {
+	color: #E5E4E2;
+}
+input {
+	margin-bottom: 15px;
+	color: #434c56;  /* SlateGray(30% shade) */
+}
+#userInstruction {
+	display: inline-block;
+	margin: 15px 0 0 50px;
+}
+#artist {
+	margin-top: 25px;
+}
+#genre {
+	margin-top: 25px;
+}
+#options {
+	color: #E5E4E2;
+	margin: 90px 0 0 10%;
+}
+#results {
+	font-size: 1.25em;
+	line-height: 2em;
+	margin: 75px 10% 0 0;
+}
+.songFont {
+	font-size: 1.65em;
+	font-family: Arial;
+	color: #785616;
+	margin-left: 5%;
+}
+.songDetails {
+	font-size: .9em;
+	font-family: Arial;
+	margin-left: 5%;
+}
+.filterButton {
+	margin: 0 auto 0 auto;
+}
+.modal-content {
+  margin: auto 5% auto 40%; }
