@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Red-French/MEAN-stack_SectionMaster#readme",
   "jshintConfig": {
-  "esversion": 6
+    "esversion": 6
   },
   "dependencies": {
     "body-parser": "^1.15.0",
