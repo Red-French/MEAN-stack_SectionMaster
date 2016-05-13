@@ -1,6 +1,6 @@
 (function() {
 'use strict';
-
+const app = angular.module('MNCApp');
 app.controller('SingerCtrl', ['$scope', '$http', 'dataService',
   function($scope, $http, dataService) {
     $scope.$state = $state;
