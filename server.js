@@ -15,6 +15,7 @@ const colors = require('colors');
 // ~ ~
 
 require('./back-end/database');  // database.js holds Mongoose connection to MongoDB
+require('./back-end/seed');  // require the seed data
 
 const port = process.env.PORT || 3000;  // dynamic port
 
