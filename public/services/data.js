@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 // SERVICES/DATA (CONNECT TO API BACK-END)
 
@@ -28,3 +29,4 @@ app.service('dataService', function($http, $q) {
   };
 
 });
+})();
