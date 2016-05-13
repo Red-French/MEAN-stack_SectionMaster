@@ -23,6 +23,9 @@
     "url": "https://github.com/Red-French/MEAN-stack_SectionMaster/issues"
   },
   "homepage": "https://github.com/Red-French/MEAN-stack_SectionMaster#readme",
+  "jshintConfig": {
+  "esversion": 6
+  },
   "dependencies": {
     "body-parser": "^1.15.0",
     "bower": "^1.7.9",
