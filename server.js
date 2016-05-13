@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 
 const express = require('express');  // node framework
@@ -43,3 +44,4 @@ require ('./back-end/api.js')(app); // location of api - pass in app
   app.listen(port, () => {
     console.log(colors.green(`Section Master server running on port: ${port}`));
   });
+})();
