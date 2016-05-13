@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 // API
 
@@ -63,3 +64,4 @@ app.get('/api/status', (req, res) => {
 //   });
 // });
 };
+})();
