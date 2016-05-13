@@ -1,3 +1,4 @@
+(function() {
 'use strict';
 const app = angular.module('MNCApp', ['ngRoute']);
 app.config(['$routeProvider',
@@ -29,3 +30,4 @@ app.config(['$routeProvider',
     // })
    .otherwise('/songs/list'); // catch-all
  }]);
+})();
