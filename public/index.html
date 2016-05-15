@@ -25,17 +25,22 @@
 	  </div>
 	</nav>
 	</div>
-	<div id="options">
-		<!-- <span>Choose Singer:</span>
-    <select ng-model="artistModel" name="artist">
+	<div id="options" ng-controller="SingerCtrl">
+		<span>Singer:</span>
+    <select ng-model="singerModel" name="singer">
     	<option></option>
-    	<option ng-repeat="thing in passfail">{{thing.singer}}</option>
+    	<option ng-repeat="data in sectionStats | unique: 'singer'">{{data.singer}}</option>
     </select>
-    <span>Choose Song:</span>
-		<select ng-model="albumModel" name="album">
+    <span>Song:</span>
+		<select ng-model="songModel" name="song">
 	    	<option></option>
-	    	<option ng-repeat="thing in passfail">{{thing.status}}</option>
-		</select> -->
+	    	<option ng-repeat="data in sectionStats | unique : 'song'">{{data.song}}</option>
+		</select>
+    <span>Status:</span>
+    <select ng-model="statusModel" name="status">
+	    	<option></option>
+	    	<option ng-repeat="data in sectionStats | unique : 'status'">{{data.status}}</option>
+		</select>
 
 	<div ng-view id="results"></div>
 
