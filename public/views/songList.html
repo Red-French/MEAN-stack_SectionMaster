@@ -1,5 +1,6 @@
-<div><h1>HELLLLLOOOO!!!!!!!!</h1></div>
-<div ng-controller="SingerCtrl" ng-repeat="thing in songs | filter: query | filter: artistModel | filter: albumModel">
-<a href="#/songs/delete" ><button type="button" id="deleteButton" ng-click="deleteSong(thing)">Delete</button></a>
-	<a href="#/songs/details/{{thing.$id}}" >{{ thing.title }}</a>
+<div><h1>Tenor Section Song Status:</h1></div>
+<div ng-controller="SingerCtrl">
+  <ul ng-repeat="data in sectionStats">
+    <li>{{data.song}}</li>
+  </ul>
 </div>

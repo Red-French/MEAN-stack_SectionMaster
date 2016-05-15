@@ -25,20 +25,19 @@
 	  </div>
 	</nav>
 	</div>
-	<div id="options" ng-controller="SingerCtrl">
-		<span>Choose Singer:</span>
+	<div id="options">
+		<!-- <span>Choose Singer:</span>
     <select ng-model="artistModel" name="artist">
     	<option></option>
-    	<option ng-repeat="thing in songs">{{thing.song}}</option>
+    	<option ng-repeat="thing in passfail">{{thing.singer}}</option>
     </select>
     <span>Choose Song:</span>
 		<select ng-model="albumModel" name="album">
 	    	<option></option>
-	    	<option ng-repeat="thing in songs">{{thing.status}}</option>
-		</select>
+	    	<option ng-repeat="thing in passfail">{{thing.status}}</option>
+		</select> -->
 
 	<div ng-view id="results"></div>
-  <div>{{passfail.amount}}</div>
 
   </div>
 
