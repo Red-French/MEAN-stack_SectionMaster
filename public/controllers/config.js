@@ -14,6 +14,10 @@ app.config(['$routeProvider',
    })
    .when('/songs/form', {  // when URL ends with this
      templateUrl: 'views/songForm.html',
+     controller: 'SingerCtrl'
+   })
+   .when('/data/submit', {  // when URL ends with this
+     templateUrl: 'views/songForm.html',
      controller: 'formCtrl'
    })
     .when('/songs/details/:songId', {  // gets matched in controller to href defined in songs-list partial: href="#/songs/{{ song.$id }}
