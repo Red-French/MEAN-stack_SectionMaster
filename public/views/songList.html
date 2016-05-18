@@ -1,5 +1,5 @@
 <div><h1>Tenor Section Song Status:</h1></div>
-<div ng-controller="SingerCtrl">
+<div ng-controller="loadCtrl">
   <ul ng-repeat="data in sectionStats | filter: query | filter: singerModel | filter: songModel | filter: statusModel">
     <li>{{data.song}} {{data.singer}} {{data.status}}</li>
   </ul>
