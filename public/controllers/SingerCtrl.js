@@ -27,14 +27,8 @@
 
     // INITIAL LOAD OF SONGS
     dataService.getSingers(function(response){  // 'response' from getLeaders function in services/data.js
-      var sectionStats = response.data.passfail;  // get 'singers' data from getLeaders 'response'
+      let sectionStats = response.data.passfail;  // get 'singers' data from getLeaders 'response'
       $scope.sectionStats =  sectionStats;  // put data on $scope for ng-repeat in DOM
     });
-
-    // button on 'add info' page triggers this function
-    $scope.changeview = function () {
-        $location.path('/data/submit');  // change url to trigger controller change (formCtrl)
-    };
   }]);
-
 })();
