@@ -4,19 +4,11 @@ const app = angular.module('MNCApp', ['ngRoute']);
 app.config(['$routeProvider',
  function($routeProvider) {
    $routeProvider
-   // .when('/songs', {
-   //      templateUrl: 'index.html',
-   //      controller: 'indexCtrl'
-   //    })
-   .when('/songs/list', {  // when URL ends with this
+   .when('/list', {  // when URL ends with this
      templateUrl: 'views/songList.html',
      controller: 'SingerCtrl'
    })
-   .when('/songs/form', {  // when URL ends with this
-     templateUrl: 'views/songForm.html',
-     controller: 'SingerCtrl'
-   })
-   .when('/data/submit', {  // when URL ends with this
+   .when('/form', {  // when URL ends with this
      templateUrl: 'views/songForm.html',
      controller: 'formCtrl'
    })
@@ -32,6 +24,6 @@ app.config(['$routeProvider',
     //   templateUrl: 'views/songFilter.html',
     //   controller: 'songFilterCtrl'
     // })
-   .otherwise('/songs/list'); // catch-all
+   .otherwise('/list'); // catch-all
  }]);
 })();
