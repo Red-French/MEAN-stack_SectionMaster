@@ -6,7 +6,7 @@ app.config(['$routeProvider',
    $routeProvider
    .when('/list', {  // when URL ends with this
      templateUrl: 'views/songList.html',
-     controller: 'SingerCtrl'
+     controller: 'loadCtrl'
    })
    .when('/form', {  // when URL ends with this
      templateUrl: 'views/songForm.html',
