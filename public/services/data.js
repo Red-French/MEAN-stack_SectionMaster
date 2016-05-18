@@ -2,13 +2,11 @@
 'use strict';
 // SERVICES/DATA (CONNECT TO API BACK-END)
   const app = angular.module('MNCApp');
-  
+
   app.service('dataService', ['$http', function($http, $q) {
 
     // CREATE
     this.addData = function(songData) {
-      console.log(songData);
-      console.log('inside service > addSong');
       return $http.post('/api/status', songData);
     };
 
